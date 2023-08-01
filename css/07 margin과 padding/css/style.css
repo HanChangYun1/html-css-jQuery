@@ -1,0 +1,81 @@
+.ex1 {
+  width: 500px;
+  margin: 0 auto;
+  padding: 100px;
+  box-sizing: border-box;
+  background: #eee;
+}
+.ex1 div {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background: #000;
+  color: #fff;
+}
+.ex1 div:nth-child(1) {
+  margin: 0;
+}
+.ex1 div:nth-child(2) {
+  margin: 0 auto;
+}
+.ex1 div:nth-child(3) {
+  margin: 0 0 0 auto;
+}
+.ex2 {
+  width: 500px;
+  margin: 0 auto;
+  padding: 100px;
+  box-sizing: border-box;
+  background: #eee;
+}
+.ex2 div {
+  text-align: center;
+  line-height: 100px;
+  background: #000;
+}
+.ex2 div div {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.ex2 div div:nth-child(2) {
+  margin: 100px 0 0 auto;
+}
+.ex3 span {
+  display: inline-block;
+  border: 1px solid red;
+  margin: 30px 0;
+  padding: 10px 30px;
+  background: yellow;
+}
+.ex4 div {
+  margin: 30px 0;
+  background: yellow;
+}
+.ex5 {
+  width: 670px;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #000;
+}
+.ex5 > div {
+  text-align: center;
+  width: 290px;
+  padding: 30px;
+  box-sizing: border-box;
+  background: red;
+}
+.ex5 > div:last-child {
+  margin: 30px 0 0 auto;
+}
+.ex5 > div > div {
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+.ex5 > div > div:last-child {
+  margin: 30px 0 0 auto;
+}

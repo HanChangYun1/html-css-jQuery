@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>문법</h1>
+      <section>
+        <ul>
+          <h2>필수요소</h2>
+          <li>
+            h1~h6, p 요소는 블럭요소를 자식으로 허락하지 않는다
+            <!-- <h1><p></p> </h1> -->
+          </li>
+          <li>
+            inline, inline-block요소의 자식으로 block레벨이 허락되지 않는다
+            <br />
+            단,a는 예외(a는 블록요소를 자식으로 허락함)
+            <!-- 
+            <span><p></p></span>
+           -->
+          </li>
+          <li>
+            상호작용 요소간에는 부모자식노드가 허락되지 않는다 <br />
+            <!-- <a href=""><button></button></a> -->
+            <!-- <a href=""><input type="text"></a> -->
+          </li>
+          <li>
+            ul, ol의 자식으로는 li만 허락됨 <br />
+            <!-- <ul><div></div></ul> -->
+          </li>
+          <li>dl의 자식으로는 dt와 dd만 허락됨</li>
+          <li>table은 tbody 한개 이상 가져야함</li>
+        </ul>
+      </section>
+      <section>
+        <h2>권장사항</h2>
+        <ul>
+          <li>웹사이트의 페이지마다 title제목을 다르게 설정하길 권장</li>
+          <li>웹문서는 h1과 main요소를 한개를 가지는걸 권장</li>
+          <li>h1~h6는 글자를 포함하길 권장</li>
+          <li>main, section, article요소는 제목을 한개이상 포함하길 권장</li>
+          <li>입력양식은 레이블요소와 참조하길 권장</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

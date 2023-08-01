@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>display level</h1>
+      <section>
+        <h2>display의 종류</h2>
+        <article>
+          <h3>block 레벨</h3>
+          <ul>
+            <li>한줄을 통째로 차지하는 요소</li>
+            <li>기본적으로 부모의 넓이와 동일한 넓이를 가지고있음</li>
+            <li>크기를 가질 수 있음</li>
+          </ul>
+        </article>
+        <article>
+          <h3>inline 레벨</h3>
+          <ul>
+            <li>줄내림이 되지 않는 요소</li>
+            <li>크기속성을 가질 수 없음</li>
+          </ul>
+        </article>
+        <article>
+          <h3>inline block 레벨</h3>
+          <ul>
+            <li>줄내림이 되지 않으면서, 크기를 가질 수 있음</li>
+            <li>
+              img, svg, canvas, video, iframe, button, input, select, textarea
+            </li>
+          </ul>
+        </article>
+      </section>
+      <hr />
+      <section>
+        <h2>inline 레벨간의 수평 줄맞춤</h2>
+        <div class="ex1">
+          <span>span</span>
+          <span>span</span>
+          <span>span</span>
+        </div>
+        <ul>
+          <li>text-align은 요소 안쪽 글자 및 인라인계열요소를 정렬</li>
+          <li>
+            line-height은 행간을 제어하는 속성이지만, 요소의 높이와 동일하게
+            설정할 경우 수직 중앙정렬기능으로 사용된다 (!한줄일 경우만 사용)
+          </li>
+          <li>
+            vertical-align속성은 글자 및 일라인계열요소의 수평줄 맞춤 기능으로
+            사용
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>block레벨의 수평정렬</h2>
+        <ul>
+          <li>
+            margin의 수평값에 auto값을 사용(auto값은 block레벨에만 적용됨)
+          </li>
+        </ul>
+        <div class="ex2">
+          <span>span</span>
+        </div>
+        <br />
+        <div class="ex3">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

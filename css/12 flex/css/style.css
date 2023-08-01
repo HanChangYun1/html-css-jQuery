@@ -1,0 +1,140 @@
+.ex1,
+.ex2 {
+  width: 500px;
+  padding: 10px;
+  margin: 30px auto;
+  border: 1px solid #666;
+}
+.ex1 div,
+.ex2 span {
+  background: yellow;
+  border: 1px solid orange;
+}
+.ex1 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.ex2 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.ex3,
+.ex4 {
+  margin: 20px auto;
+  width: 150px;
+  height: 15a0px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+.ex3 div,
+.ex4 span {
+  background: #ff0;
+  border: 1px solid orange;
+}
+.ex3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ex4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ex5,
+.ex6,
+.ex7,
+.ex8,
+.ex9 {
+  margin: 20px auto;
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.ex5 div,
+.ex6 div,
+.ex7 div,
+.ex8 div,
+.ex9 div {
+  background: #ff0;
+  border: 1px solid orange;
+}
+.ex5 {
+  display: flex;
+  flex-direction: row; /*꼬치 수평*/
+  align-items: center; /* 꼬치 수직중앙 */
+  justify-content: space-between; /*오뎅을 벌려줌*/
+}
+.ex6 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.ex7 {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+.ex8 {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.ex9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.ex10 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 200px;
+  border: 1px solid #000;
+}
+.ex10 div {
+  width: 90px;
+  height: 90px;
+  background: yellow;
+  margin: 5px;
+}
+.ex11,
+.ex12 {
+  display: flex;
+  margin: 30px auto;
+  width: 400px;
+  border: 1px solid #000;
+}
+.ex11 div {
+  background: yellow;
+  border: 1px solid orange;
+  flex-grow: 1;
+}
+.ex12 {
+  overflow: auto;
+}
+.ex12 div {
+  border: 1px solid orange;
+  width: 150px;
+  flex-shrink: 0;
+}
+.ex13 {
+  display: flex;
+  margin: 30px auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.ex13 div {
+  background: yellow;
+  border: 1px solid orange;
+  flex-grow: 1;
+}

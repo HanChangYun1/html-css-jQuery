@@ -1,0 +1,122 @@
+.ex1 div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+  background: #000;
+  color: #fff;
+}
+.ex1 .box1 {
+  transition: all 1s;
+}
+.ex1 .box1:hover {
+  background: red;
+  color: yellow;
+}
+.ex1 .box2 {
+  transition: all 1s;
+}
+.ex1 .box2.active {
+  border-radius: 50%;
+}
+.ex1 .box3 {
+  position: relative;
+}
+.ex1 .box3 div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transition: all 1s;
+  background: #ff0;
+  right: 0;
+  top: 0;
+}
+.ex1 .box3:hover div {
+  right: 80px;
+  top: 80px;
+}
+.ex1 .box4 {
+  position: relative;
+}
+.ex1 .box4 div {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  transition: right 1s, top 1s;
+  transition-delay: 1s, 0s;
+  transition-timing-function: linear;
+  background: #ff0;
+  right: 0;
+  top: 0;
+}
+.ex1 .box4:hover div {
+  right: 80px;
+  top: 80px;
+  transition-delay: 0s, 1s;
+}
+.ex2 {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #000;
+}
+.ex2 div {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: red;
+  /* animation-name: move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse; */
+  /* animation: move 3s infinite linear alternate-reverse; */
+}
+.ex2:hover div {
+  animation: move 3s infinite linear alternate-reverse;
+}
+
+@keyframes move {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 250px;
+    top: 0;
+  }
+  50% {
+    left: 250px;
+    top: 250px;
+  }
+  75% {
+    left: 0px;
+    top: 250px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+.ex3 {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background: red;
+}
+.ex3:hover {
+  animation: jello 0.5s;
+}
+.ex4 {
+  height: 100px;
+  background-image: url("../img/bg2.jpg");
+  animation: bg 10s infinite linear;
+}
+@keyframes bg {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}

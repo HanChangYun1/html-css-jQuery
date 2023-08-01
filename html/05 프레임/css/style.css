@@ -1,0 +1,57 @@
+.gmap {
+  /* 이미지 비디오등등은 px로 정하지 않는다 */
+  width: 50%;
+  height: 50vh;
+  box-sizing: border-box;
+  border: 10px solid #ccc;
+}
+.utube {
+  /* 560:315 = 800 : 450 */
+  width: 800px;
+  height: 450px;
+  box-sizing: border-box;
+  border: 5px solid #000;
+}
+
+.video_container {
+  position: relative;
+  width: 70%;
+  max-width: 600px;
+  margin: 30px auto;
+  border: 1px solid red;
+}
+.video_container span {
+  display: block;
+  width: 100%;
+  background: #eee;
+  padding-top: 56.25%;
+}
+.video_container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.box1 {
+  /* 화면넓이의 반절, 400이하에서,
+  21:9 비율을 유지하는 박스를  */
+  position: relative;
+  width: 50%;
+  max-width: 400px;
+  margin: 30px auto;
+  border: 1px solid red;
+}
+.box1 span {
+  display: block;
+  width: 100%;
+  background: #eee;
+  padding-top: 42.86%;
+}
+.box1 div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: green;
+  top: 0;
+}

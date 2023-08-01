@@ -1,0 +1,61 @@
+h1 {
+  background: #eee;
+  text-align: center;
+}
+span {
+  background: red;
+  text-align: center;
+}
+.ex1 span {
+  background: yellow;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+}
+.ex1 span:nth-child(1) {
+  height: 150px;
+  line-height: 150px;
+}
+.ex1 span:nth-child(2) {
+  height: 100px;
+  line-height: 100px;
+}
+.ex1 span:nth-child(3) {
+  height: 50px;
+  line-height: 50px;
+}
+.ex2 {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  background: #ff0;
+  text-align: right;
+}
+.ex2 span {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background: green;
+  margin-top: 50px;
+  text-align: center;
+}
+.ex3 {
+  width: 350px;
+  height: 250px;
+  margin: 0 auto;
+  text-align: center;
+  background: yellow;
+}
+.ex3 span {
+  width: 100px;
+  height: 100px;
+  background: pink;
+}
+.ex3 span:first-child {
+  display: block;
+  margin: 0 auto;
+}
+.ex3 span:first-child ~ * {
+  display: inline-block;
+}

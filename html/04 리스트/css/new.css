@@ -1,0 +1,15 @@
+ul li{
+    list-style: none;
+}
+
+UL LI::before{
+    content: ' ';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: black;
+
+}
+ol li{
+
+}

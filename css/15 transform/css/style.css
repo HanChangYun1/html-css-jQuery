@@ -1,0 +1,58 @@
+.ex1 {
+  text-align: center;
+}
+.ex1 div {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #ccc;
+  transition: transform 0.3s;
+}
+.ex1 div:hover {
+  transform: scale(1.3) rotate(45deg);
+}
+.ex2 {
+  border: 1px solid #000;
+}
+.ex2 p {
+  margin: 0 auto;
+  width: 50%;
+  background: #ff0;
+  opacity: 0;
+  transform: translate(0, 110%);
+  transition: transform 1s;
+}
+.ex2:hover p {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.ex3 {
+  position: relative;
+  background: #ccc;
+}
+.ex3 div {
+  position: absolute;
+  background: yellow;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.ex4 div {
+  position: relative;
+  display: inline-block;
+  padding: 30px 100px;
+  background: #666;
+  border: 1px solid #000;
+  transform: skewX(-45deg);
+  color: #fff;
+  transition: transform 0.3s, background 0.3s;
+}
+.ex4 div span {
+  display: block;
+  transform: skewX(45deg);
+}
+.ex4 div:hover {
+  transform: scale(120%) skewX(-45deg);
+  z-index: 1;
+  background: red;
+}

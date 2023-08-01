@@ -1,0 +1,45 @@
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.ex1 {
+  /*td의 크기는 table의 크기를 제어할 수 없다*/
+  width: 150px;
+}
+
+.ex1 td {
+  height: 50px;
+  box-sizing: border-box;
+  border: 1px solid #666;
+}
+.ex2,
+.ex3 {
+  width: 400px;
+}
+.ex2 td {
+  height: 50px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #666;
+}
+
+.ex3 td,
+.ex3 th {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #666;
+}
+.ex4 {
+  width: 600px;
+  margin: 0 auto;
+}
+.ex4 caption {
+  margin-bottom: 15px;
+}
+.ex4 td,
+.ex4 th {
+  border: 1px solid #666;
+  height: 40px;
+}

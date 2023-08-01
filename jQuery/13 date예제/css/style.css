@@ -1,0 +1,34 @@
+.ex7 {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+  background: red;
+}
+.ex7 img {
+  display: block;
+  width: 100%;
+}
+.ex7 .pin {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform-origin: center bottom;
+}
+.ex7 .hour {
+  width: 10px;
+  margin-left: -3px;
+  height: 25%;
+  background: #000;
+}
+.ex7 .min {
+  width: 6px;
+  margin-left: -2px;
+  height: 30%;
+  background: red;
+}
+.ex7 .sec {
+  width: 2px;
+  margin-left: -1px;
+  height: 35%;
+  background: blue;
+}

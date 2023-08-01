@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="ex1">
+      <p>1. 가위바위보중 하나를 선택하고 결과를 확인</p>
+      <p>
+        <input required type="radio" name="rsp" id="scissor" /><label
+          for="scissor"
+          >가위</label
+        >
+        <input required type="radio" name="rsp" id="rock" /><label for="rock"
+          >바위</label
+        >
+        <input required type="radio" name="rsp" id="paper" /><label for="paper"
+          >보</label
+        >
+      </p>
+      <p><button>결과확인</button></p>
+      <p class="result">결과 :</p>
+    </form>
+    <hr />
+    <form class="ex2">
+      <p>2. 모든문제 정답이면 최종정답</p>
+      <p class="q1">
+        <input class="num1" type="number" min="0" max="9" readonly />+
+        <input class="num2" type="number" min="0" max="9" readonly />=
+        <input required class="usernum" type="number" min="0" max="19" />
+      </p>
+      <p class="q2">
+        <input class="num1" type="number" min="0" max="9" readonly />+
+        <input class="num2" type="number" min="0" max="9" readonly />=
+        <input required class="usernum" type="number" min="0" max="19" />
+      </p>
+      <p class="q3">
+        <input class="num1" type="number" min="0" max="9" readonly />+
+        <input class="num2" type="number" min="0" max="9" readonly />=
+        <input required class="usernum" type="number" min="0" max="19" />
+      </p>
+      <p><button>결과확인</button></p>
+      <p class="result">결과 :</p>
+    </form>
+  </body>
+</html>

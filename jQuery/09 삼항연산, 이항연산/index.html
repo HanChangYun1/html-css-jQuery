@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <form class="ex1">
+        <p>1. 0보다 큰수를 입력하세요</p>
+        <input required type="number" class="num" />
+        <p class="result">결과 :</p>
+      </form>
+      <hr />
+      <form class="ex2">
+        <p>2. 점수를 입력하면 등급이 출력</p>
+        <input required class="num" type="number" />
+        <p class="result">결과 :</p>
+      </form>
+      <hr />
+      <form class="ex3">
+        <p>3. 4칙연산</p>
+        <input required class="num1" type="number" />
+        <select name="" id="">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+        <input required class="num2" type="number" />
+        <button style="display: none"></button>
+        <p class="result">결과 :</p>
+      </form>
+      <hr />
+      <form class="ex4">
+        <fieldset class="q1">
+          <legend>4-1</legend>
+          <input readonly class="num1" type="number" min="0" max="9" />
+          +
+          <input readonly class="num2" type="number" min="0" max="9" />
+          =
+          <input required class="num3" type="number" min="0" max="19" />
+        </fieldset>
+        <fieldset class="q2">
+          <legend>4-2</legend>
+          <input required class="num1" type="number" min="0" max="9" />
+          +
+          <input required class="num2" type="number" min="0" max="9" />
+          =
+          <input required class="num3" type="number" min="0" max="19" />
+        </fieldset>
+        <button style="display: none"></button>
+        <p class="result">결과 :</p>
+      </form>
+      <hr />
+      <div class="ex5">
+        <p>5. 더하기</p>
+        <form action="">
+          <input type="number" readonly min="0" max="9" />
+          +
+          <input type="number" readonly min="0" max="9" />
+          =
+          <input type="number" required min="0" max="19" />
+          <p>결과</p>
+          <button style="display: none"></button>
+        </form>
+        <form action="">
+          <input type="number" readonly min="0" max="9" />
+          +
+          <input type="number" readonly min="0" max="9" />
+          =
+          <input type="number" required min="0" max="19" />
+          <p>결과</p>
+          <button style="display: none"></button>
+        </form>
+      </div>
+      <hr />
+      <form class="ex6">
+        <p>6. 글자나 숫자를 입력 후 enter를 누르면 버튼이 생겨요</p>
+        <p><input type="text" /></p>
+        <p class="result">결과</p>
+      </form>
+    </main>
+  </body>
+</html>

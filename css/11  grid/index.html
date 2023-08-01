@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>grid layout</h1>
+      <ul>
+        <li>
+          grid속성은 block레벨과 유사, 노드순서와 상관없이 layout을 구현할 수
+          있음
+        </li>
+        <li>grid분할예시 : repeat(3, auto), repeat(3, 1fr), repeat(3,100px)</li>
+        <li>
+          grid요소의 자식은 크기를 지정하지 않을시 최소 그리드 한개의 크기를
+          갖는다
+        </li>
+        <li>
+          자식요소의 grid칸 설정예시 : <br />
+          grid-column: 2/4; <br />
+          grid-column: 2/span2(2~3칸 소유) <br />
+          grid-colums: 3(3칸에서 시작) <br />
+          grid-area : 줄시작/ 칸시작/ 줄끝/ 칸끝
+        </li>
+      </ul>
+    </main>
+    <hr />
+    <div class="ex1">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+    </div>
+    <hr />
+    <div class="ex2">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+    </div>
+    <hr />
+    <div class="ex3">
+      <div class="box1">1</div>
+      <div class="box2">2</div>
+      <div class="box3">3</div>
+      <div class="box4">4</div>
+      <div class="box5">5</div>
+      <div class="box6">6</div>
+    </div>
+  </body>
+</html>

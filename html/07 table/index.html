@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>table</h1>
+      <ul>
+        <li>데이터베이스(관계형) 출력 목적</li>
+        <li>table은 block레벨과 유사함</li>
+        <li>tr마다 td의 개수는 동일해야함</li>
+        <li>cell(td)의 병합 : rowspan, colspan</li>
+        <li>필드셋 이름은 th를 이용</li>
+        <li>thead : 필드셋영역, tbody : 데이터영역, tfoot : 보조영역</li>
+      </ul>
+      <hr />
+    </main>
+    <hr />
+    <table class="ex1">
+      <tr>
+        <td colspan="2">1-1</td>
+        <!-- <td>1-2</td> -->
+        <td rowspan="2">1-3</td>
+      </tr>
+      <tr>
+        <td rowspan="2">2-1</td>
+        <td>2-2</td>
+        <!-- <td>2-3</td> -->
+      </tr>
+      <tr>
+        <!-- <td>3-1</td> -->
+        <td colspan="2">3-2</td>
+        <!-- <td>3-3</td> -->
+      </tr>
+    </table>
+    <hr />
+    <table class="ex2">
+      <caption>
+        학적부
+      </caption>
+      <thead>
+        <tr>
+          <th scope="row">학번</th>
+          <th scope="row">이름</th>
+          <th scope="row">성별</th>
+          <th scope="row">성적</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>홍길동</td>
+          <td>남</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>아무개</td>
+          <td>여</td>
+          <td>B</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">2023년 7월 25일자 자료</td>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+    <table class="ex3">
+      <caption>
+        시간표
+      </caption>
+      <thead>
+        <tr>
+          <th scope="row">요일</th>
+          <th scope="row">1교시</th>
+          <th scope="row">2교시</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>월</td>
+          <td>영어</td>
+          <td>도덕</td>
+        </tr>
+        <tr>
+          <td>화</td>
+          <td>국어</td>
+          <td>체육</td>
+        </tr>
+        <tr>
+          <td>수</td>
+          <td>과학</td>
+          <td>영어</td>
+        </tr>
+        <tr>
+          <td>목</td>
+          <td>미술</td>
+          <td>수학</td>
+        </tr>
+        <tr>
+          <td>금</td>
+          <td>기술</td>
+          <td>사회</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <table class="ex4">
+      <caption>
+        월별 디바이스 판매현황
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col" rowspan="2">구분</th>
+          <th scope="colgroup" colspan="3">디바이스종류</th>
+          <!-- <th></th>
+          <th></th> -->
+        </tr>
+        <tr>
+          <!-- <th></th> -->
+          <th scope="col">스마트폰</th>
+          <th scope="col">태블릿PC</th>
+          <th scope="col">데스크탑PC</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1월</th>
+          <td>5만</td>
+          <td>3만</td>
+          <td>1만</td>
+        </tr>
+        <tr>
+          <th scope="row">2월</th>
+          <td>7만</td>
+          <td>2만</td>
+          <td>1만</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

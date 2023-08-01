@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <h1>
+        position
+        <span class="circle1"></span>
+        <span class="circle2"></span>
+        <span class="circle3"></span>
+        <span class="circle4"></span>
+      </h1>
+      <p>좌표를 이용해서 특정 위치로 요소를 배치</p>
+      <section>
+        <h2>absolute</h2>
+        <ul>
+          <li>
+            abs 포지션이 적용되면 독립적인 위치를 가진다 <br />
+            다른요소와 겹치고, 부모는 높이를 인식할 수 없다
+          </li>
+          <li>좌표를 설정할 수 있음 : left, right, top, bottom</li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>fixed과 absolute의 차이</h2>
+        <ul>
+          <li>absolute는 문서기준, fixed는 브라우저 기준 좌표</li>
+          <li>
+            fixed의 좌표는 부모와 상관없음 (단, 부모요소에 transform속성이
+            적용되면 예외)
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <section>
+        <h2>relative</h2>
+        <ul>
+          <li>absolute가 적용된 자식요소의 좌표 기준으로 설정할때 사용</li>
+          <li>
+            현재 레이아웃을 그대로 유지하면서 position속성을 적용할 수 있음
+          </li>
+        </ul>
+      </section>
+      <hr />
+      <div class="container">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt
+          nam dolor? Ullam alias quasi sapiente, autem similique distinctio
+          aliquam harum ipsum doloremque ut, omnis neque vel a cum sit.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat
+          tempora ipsa quis natus voluptatum veritatis quia in suscipit rerum?
+          Quidem libero est beatae odit laborum exercitationem. Exercitationem
+          vero ex eveniet? Deserunt adipisci blanditiis, ab laborum quos minus
+          inventore nesciunt asperiores veniam ad quia explicabo quae,
+          accusantium tempore. Autem, quidem doloremque ad, illum, quod
+          consectetur quam perferendis facere impedit eum nostrum? Laborum ab
+          quibusdam hic facilis libero quam eligendi a excepturi, beatae
+          perspiciatis inventore animi repellendus sequi eum vero. Inventore
+          exercitationem sequi placeat consequatur laudantium totam quisquam
+          enim, perferendis nihil! Autem.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea molestiae
+          vitae tempore ab! Sequi quod expedita vitae nostrum praesentium, fuga
+          cum in quam minus neque incidunt, dolore error est perferendis. Optio,
+          officia. Saepe quisquam, ab voluptatibus repudiandae porro ex placeat
+          excepturi laborum cupiditate eum vel, architecto culpa fugit at
+          veniam! Autem amet ex id dolor quasi porro harum numquam corrupti!
+          Inventore quisquam officiis tempora, maxime aspernatur, voluptate
+          consequuntur dicta eius saepe laborum doloribus nesciunt, rerum
+          repudiandae corporis! Sequi assumenda quidem magni aspernatur quod,
+          blanditiis modi corrupti hic, facere possimus tempore? Molestias,
+          alias. Voluptatem ducimus quas aspernatur accusantium rerum ea.
+          Officia alias veritatis fugit reiciendis voluptatum excepturi
+          laboriosam est tenetur inventore consequuntur, veniam laudantium, quo
+          ullam aut? Aliquid, delectus deleniti. Earum! Nesciunt nobis maxime
+          quae voluptatum nemo libero adipisci dolorum natus ut mollitia nihil
+          deserunt vero excepturi blanditiis molestias aspernatur, quos rerum
+          fugiat voluptas hic eaque ad. Similique facilis quisquam illum.
+        </p>
+      </div>
+      아주중요한내용... <br />
+      아주중요한내용... <br />
+      아주중요한내용... <br />
+    </main>
+
+    <span class="box1">
+      <span>box1</span>
+    </span>
+
+    <div class="box2"></div>
+  </body>
+</html>

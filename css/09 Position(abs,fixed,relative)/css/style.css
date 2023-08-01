@@ -1,0 +1,88 @@
+.box1 {
+  position: absolute;
+  /* left: 50%;
+  margin-left: -50px; */
+  left: calc(100% - 100px);
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background: rgb(195, 195, 255);
+}
+.box1 span {
+  position: absolute;
+  background: yellow;
+  right: 0;
+  bottom: 0;
+}
+.box2 {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  left: calc(100% - 100px);
+  bottom: calc(50% - 100px);
+  background: blue;
+}
+
+.container {
+  width: 300px;
+
+  border: 1px solid black;
+  padding: 20px;
+}
+.container p {
+  position: relative;
+  background: yellow;
+  padding: 20px;
+}
+
+.container p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: red;
+}
+h1 {
+  width: 200px;
+  height: 200px;
+  background: orange;
+  font-size: 2em;
+  font-weight: normal;
+  color: rgb(255, 255, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: -0.2em;
+  text-align: center;
+  line-height: 200px;
+  border-radius: 50%;
+  margin: 30px auto;
+  position: relative;
+}
+h1 span {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: orange;
+  font-size: 1.5em;
+  line-height: 40px;
+  border-radius: 50%;
+}
+h1 .circle1 {
+  left: 80px;
+  top: -20px;
+}
+h1 .circle2 {
+  right: -20px;
+  top: 80px;
+}
+h1 .circle3 {
+  left: 80px;
+  top: 180px;
+}
+h1 .circle4 {
+  left: -20px;
+  top: 80px;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="ex1">
+        <p>1. 버튼을 클릭했을 때 박스의 색깔이 변합니다.</p>
+        <div data-a="#F00" class="box">빨</div>
+        <div data-a="#0F0" class="box">녹</div>
+        <div data-a="#00F" class="box">파</div>
+        <p><button>버튼</button></p>
+      </div>
+      <hr />
+      <div class="ex2">
+        <p>2. 버튼을 클릭했을 때 박스의 색깔이 변합니다.</p>
+        <div class="group1">
+          <div data-a="#F00" class="box">빨</div>
+          <div data-a="#0F0" class="box">녹</div>
+          <div data-a="#00F" class="box">파</div>
+          <p><button value="1">버튼</button></p>
+        </div>
+        <div class="group2">
+          <div data-a="#F00" class="box">빨</div>
+          <div data-a="#0F0" class="box">녹</div>
+          <div data-a="#00F" class="box">파</div>
+          <p><button value="2">버튼</button></p>
+        </div>
+        <hr />
+        <div class="ex3">
+          <p>3. 버튼을 클릭하면 글자색 한줄이 변해요</p>
+          <div>
+            <button value="red">빨</button>
+            <button value="green">녹</button>
+            <button value="blue">파</button>
+          </div>
+          <div>
+            <button value="red">빨</button>
+            <button value="green">녹</button>
+            <button value="blue">파</button>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="ex4">
+        <p>4. 더하기 문제</p>
+        <p>
+          <input class="num" type="number" min="0" max="9" readonly />
+          +
+          <input class="num" type="number" min="0" max="9" readonly />
+          +
+          <input class="num" type="number" min="0" max="9" readonly />
+          +
+          <input class="num" type="number" min="0" max="9" readonly />
+          +
+          <input class="num" type="number" min="0" max="9" readonly />
+          =
+          <input class="input" type="number" min="0" max="99" />
+        </p>
+        <p class="result">결과</p>
+      </div>
+      <hr />
+      <div class="ex5">
+        <p>5. 더하기 문제</p>
+        <p>
+          <input value="0" class="num" type="number" min="0" max="9" readonly />
+          +
+          <input value="0" class="num" type="number" min="0" max="9" readonly />
+          +
+          <input value="0" class="num" type="number" min="0" max="9" readonly />
+          +
+          <input value="0" class="num" type="number" min="0" max="9" readonly />
+          +
+          <input value="0" class="num" type="number" min="0" max="9" readonly />
+        </p>
+        <p>
+          <button>문제내기</button>
+          <button>결과보기</button>
+        </p>
+        <p class="result">결과</p>
+      </div>
+      <hr />
+      <div class="ex6">
+        <p>6. 더하기 문제</p>
+        <p class="q"></p>
+        <p class="q"></p>
+        <p class="q"></p>
+        <p class="q"></p>
+        <p class="q"></p>
+        <p><button>결과보기</button></p>
+        <p class="result">점수 보기</p>
+      </div>
+      <hr />
+      <div class="ex7">
+        <p>7. 버튼만들기</p>
+        <p class="p"></p>
+        <p class="p"></p>
+        <p class="p"></p>
+      </div>
+      <hr />
+      <div class="ex8">
+        <p>8. 라디오버튼</p>
+        <p class="q">
+          one에 해당하는 숫자를 선택하세요
+          <input name="a" type="radio" value="정답" />1
+          <input name="a" type="radio" />2 <input name="a" type="radio" />3
+        </p>
+        <p><button>결과보기</button></p>
+        <p class="result">결과</p>
+      </div>
+
+      <hr />
+      <div class="ex9">
+        <p>9. 틀린 문제 빨강 배경 정답 파란배경</p>
+        <p class="q">
+          1에 해당하는 숫자를 선택하세요
+          <input name="a" type="radio" value="정답" />1
+          <input name="a" type="radio" />2 <input name="a" type="radio" />3
+        </p>
+        <p class="q">
+          2에 해당하는 숫자를 선택하세요
+          <input name="b" type="radio" />1
+          <input name="b" type="radio" value="정답" />2
+          <input name="b" type="radio" />3
+        </p>
+        <p class="q">
+          3에 해당하는 숫자를 선택하세요
+          <input name="c" type="radio" />1 <input name="c" type="radio" />2
+          <input name="c" type="radio" value="정답" />3
+        </p>
+        <p><button>결과보기</button></p>
+        <p class="result">결과</p>
+      </div>
+      <hr />
+      <div class="ex10">
+        <p>10. 체크인 취미를 출력하기</p>
+        <p>
+          <input type="checkbox" value="스포츠" />스포츠
+          <input type="checkbox" value="영화" />영화
+          <input type="checkbox" value="음악" />음악
+          <input type="checkbox" value="여행" />여행
+        </p>
+        <p><button>버튼</button></p>
+        <p class="result">선택한 취미 :</p>
+      </div>
+      <hr />
+      <div class="ex11">
+        <p class="q q1" data-cnt="2">
+          11-1. 1에 해당하는 모든 항목을 체크하세요 <br />
+          <input type="checkbox" value="정답" />one
+          <input type="checkbox" value="정답" />하나
+          <input type="checkbox" />two <input type="checkbox" />둘
+          <input type="checkbox" />three <input type="checkbox" />셋
+        </p>
+        <p class="q q2" data-cnt="3">
+          11-2. 2에 해당하는 모든 항목을 체크하세요 <br />
+          <input type="checkbox" />one <input type="checkbox" />하나
+          <input type="checkbox" value="정답" />two
+          <input type="checkbox" value="정답" />둘
+          <input type="checkbox" value="정답" />second
+          <input type="checkbox" />셋
+        </p>
+        <p><button>버튼</button></p>
+        <p class="result">결과</p>
+      </div>
+      <hr />
+      <div class="ex12">
+        <p>12. 선택한 취미와 선호하는 음식이 출력되요</p>
+        <div class="q">
+          <input type="checkbox" value="영화" />영화
+          <input type="checkbox" value="스포츠" />스포츠
+          <input type="checkbox" value="음악" />음악
+          <p class="result">결과</p>
+        </div>
+        <div class="q">
+          <input type="checkbox" value="한식" />한식
+          <input type="checkbox" value="중식" />중식
+          <input type="checkbox" value="분식" />분식
+          <p class="result">결과</p>
+        </div>
+      </div>
+      <hr />
+      <div class="ex13">
+        <div>
+          <div>red</div>
+          <div>green</div>
+          <div>blue</div>
+        </div>
+        <div>
+          <div>orange</div>
+          <div>pink</div>
+          <div>yellow</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

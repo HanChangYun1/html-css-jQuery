@@ -1,0 +1,16 @@
+.line {
+  position: fixed;
+  width: 100%;
+  border-top: 1px solid red;
+  top: 50%;
+  left: 0;
+}
+.ex1 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+}
+.ex1.active {
+  background: red;
+}

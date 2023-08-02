@@ -1,0 +1,36 @@
+body {
+  position: relative;
+  margin: 0;
+}
+.dummy {
+  width: 3000px;
+  height: 3000px;
+  background: #eee;
+}
+.banner1 {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  background: black;
+  right: 10px;
+  top: 0;
+  transition: all 0.5s;
+}
+.banner2 {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  background: black;
+  left: auto;
+  top: 0;
+  transition: all 0.5s;
+}
+.banner3 {
+  position: absolute;
+  width: 100px;
+  height: 200px;
+  background: black;
+  left: 10px;
+  top: 0;
+  transition: all 0.5s;
+}

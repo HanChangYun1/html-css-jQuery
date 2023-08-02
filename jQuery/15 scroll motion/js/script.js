@@ -1,22 +1,27 @@
 $(function () {
-  var fnScrollMotion = function () {
+  var fnScrMotion = function () {
     var scry = $(window).scrollTop();
     var winh = $(window).height();
-    var ex1h = $(".ex1").height();
-    var offtEx1 = $(".ex1").offset().top;
-    if (scry >= offtEx1 - winh * 0.4 + ex1h * 0.5) {
-      $(".ex1").addClass("active");
-    } else {
-      $(".ex1").removeClass("active");
-    }
+    $(".box1").each(function () {
+      var box1Top = $(this).offset().top;
+      var box1Height = $(this).innerHeight();
+      if (
+        scry >= box1Top - winh * 0.7 + box1Height &&
+        scry < box1Top - winh * 0.3
+      ) {
+        $(this).addClass("active");
+      } else {
+        $(this).removeClass("active");
+      }
+    });
   };
 
-  fnScrollMotion();
+  fnScrMotion();
 
   $(window).scroll(function () {
-    fnScrollMotion();
+    fnScrMotion();
   });
   $(window).resize(function () {
-    fnScrollMotion();
+    fnScrMotion();
   });
 });

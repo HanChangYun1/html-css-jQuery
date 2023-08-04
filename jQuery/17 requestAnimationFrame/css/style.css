@@ -1,0 +1,12 @@
+.ex1 {
+  width: 500px;
+  margin: 30px auto;
+  border: 1px solid #000;
+  text-align: center;
+}
+.ex1 .box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background: red;
+}

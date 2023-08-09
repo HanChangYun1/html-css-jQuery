@@ -1,0 +1,59 @@
+@use "./mixin.scss" as m;
+
+.ex1,
+.ex2 {
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  text-align: center;
+  > div {
+    //.ex1 div
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #000;
+
+    div {
+      width: 50px;
+      height: 50px;
+      background: green;
+      &:hover {
+        background: yellow;
+      }
+    }
+  }
+}
+
+//변수와 보간법
+$w: 150px;
+$h: 150;
+
+.ex3 {
+  width: $w;
+  height: #{$h}px;
+  margin: 0 auto;
+  border: #{10 - 9}px solid red;
+}
+
+.ex4 {
+  width: 100px;
+  height: 100px;
+  margin: 10px auto;
+  border: 1px solid red;
+  @media #{m.$lg} {
+    background: red;
+  }
+  @media #{m.$md} {
+    background: blue;
+  }
+  @media #{m.$sm} {
+    background: green;
+  }
+}
+
+// mixin
+
+.ex5 button {
+  @include m.btn(blue);
+}

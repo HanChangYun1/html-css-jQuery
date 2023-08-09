@@ -1,0 +1,154 @@
+.card-wrap {
+  perspective: 1000px;
+  width: 300px;
+  height: 300px;
+  margin: 100px auto;
+}
+.card-wrap:hover .card {
+  transform: rotateY(720deg);
+}
+.card-wrap .card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+  transform-style: preserve-3d;
+  transition: all 3s;
+}
+.card-wrap .card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+  line-height: 300px;
+  backface-visibility: hidden;
+}
+.card-wrap .card div.front {
+  background: yellowgreen;
+}
+.card-wrap .card div.back {
+  transform: rotateY(180deg);
+  background: red;
+}
+
+.door-container {
+  display: flex;
+  width: 600px;
+  height: 300px;
+  margin: 800px auto;
+  background: black;
+  color: #fff;
+  perspective: 800px;
+}
+.door-container p {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.door-container .door {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+}
+.door-container .door.left {
+  transform-origin: left center;
+}
+.door-container .door.right {
+  transform-origin: right center;
+}
+.door-container .door div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 2em;
+  text-align: center;
+  line-height: 300px;
+  backface-visibility: hidden;
+}
+.door-container .door div.front {
+  background: blue;
+}
+.door-container .door div.back {
+  transform: rotateY(180deg);
+  background: red;
+}
+
+.btns {
+  text-align: center;
+}
+
+.cube-container {
+  width: 300px;
+  height: 300px;
+  margin: 200px auto;
+  perspective: 1000px;
+}
+
+.cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: all 1s;
+}
+.cube.front {
+  transform: rotateY(0);
+}
+.cube.back {
+  transform: rotateY(180deg);
+}
+.cube.right {
+  transform: rotateY(-90deg);
+}
+.cube.left {
+  transform: rotateY(90deg);
+}
+.cube.top {
+  transform: rotateX(-90deg);
+}
+.cube.bottom {
+  transform: rotateX(90deg);
+}
+.cube div {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  line-height: 300px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 3em;
+  font-weight: bold;
+}
+.cube div.front {
+  transform: translateZ(150px);
+  background: rgba(255, 165, 0, 0.7);
+}
+.cube div.back {
+  transform: rotateY(180deg) translateZ(150px);
+  background: rgba(154, 205, 50, 0.7);
+}
+.cube div.right {
+  transform: rotateY(90deg) translateZ(150px);
+  background: rgba(255, 255, 0, 0.7);
+}
+.cube div.left {
+  transform: rotateY(-90deg) translateZ(150px);
+  background: rgba(255, 192, 203, 0.7);
+}
+.cube div.top {
+  transform: rotateX(90deg) translateZ(150px);
+  background: rgba(255, 0, 0, 0.7);
+}
+.cube div.bottom {
+  transform: rotateX(-90deg) translateZ(150px);
+  background: rgba(0, 0, 128, 0.7);
+}/*# sourceMappingURL=style.css.map */

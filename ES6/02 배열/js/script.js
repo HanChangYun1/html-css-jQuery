@@ -49,17 +49,78 @@ document.querySelector(".ex1 button").addEventListener("click", () => {
   //ex6
   let fnSetNum = function () {
     document.querySelectorAll(".ex6 input").forEach((e) => {
-      let num = Math.floor(Math.random() * 10);
-      e.value = num;
+      e.readOnly = true;
+      e.value = Math.floor(Math.random() * 10);
     });
   };
   fnSetNum();
 
-  let sum = 0;
   document.querySelector(".ex6 button").addEventListener("click", () => {
-    document.querySelectorAll(".ex6 input").forEach((e) => {
-      sum += parseInt(e.value);
+    document.querySelectorAll(".ex6 .numbers").forEach((num) => {
+      let sum = 0;
+      num.querySelectorAll(".ex6 .numbers input").forEach((e) => {
+        sum += parseInt(e.value);
+      });
+      num.querySelector(".ex6 .result").innerHTML = `결과 : ${sum}`;
     });
-    document.querySelector(".ex6 .result").innerHTML = `결과 : ${sum}`;
+  });
+}
+{
+  //ex7
+  document.getElementById("id1").style.background = "red";
+  Array.from(document.getElementsByTagName("a")).forEach((el) => {
+    el.style.textDecoration = "none";
+  });
+  Array.from(document.getElementsByClassName("a")).forEach((el) => {
+    el.style.color = "red";
+  });
+}
+{
+  // ex8
+  document.querySelector(".ex8 button").addEventListener("click", (e) => {
+    document.querySelectorAll(".ex8 .category").forEach((c) => {
+      let str = " "; //문자열초기화
+      c.querySelectorAll("input:checked").forEach((ch) => {
+        str += ch.value;
+      });
+      c.querySelector(".ex8 .result").innerHTML = str;
+    });
+  });
+}
+
+{
+  //ex9
+  document.querySelectorAll(".ex9 button").forEach((b) => {
+    b.addEventListener("click", (e) => {
+      Array.from(e.target.parentElement.children).forEach((el) => {
+        el.style.color = "#000";
+      });
+      e.target.style.color = "red";
+    });
+  });
+}
+{
+  //ex10
+  document.querySelectorAll(".ex10 input").forEach((input) => {
+    input.addEventListener("input", (e) => {
+      let str = e.target.value;
+      let digit = parseInt(e.target.getAttribute("data-digit"));
+      if (str.length >= digit && e.target.nextElementSibling) {
+        e.target.nextElementSibling.focus();
+      }
+    });
+  });
+}
+{
+  //ex11
+  document.querySelectorAll(".ex11 button").forEach((btn) => {
+    btn.addEventListener("click", (el) => {
+      let arr = Array.from(el.target.parentElement.children);
+      let arr2 = arr.filter((x) => x !== el.target);
+      arr2.forEach((e) => {
+        e.classList.remove("active");
+      });
+      el.target.classList.toggle("active");
+    });
   });
 }

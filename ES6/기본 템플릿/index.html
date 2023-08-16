@@ -8,5 +8,81 @@
     <script defer src="./js/script.js"></script>
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <h1>object (객체)</h1>
+    <ul>
+      <li>가독성, 관리, 호환성</li>
+      <li>
+        객체 생성과 키에 접근<br />
+        키의 형태는 문자열과 숫자도 허락
+      </li>
+      <li>객체의 computed 방식의 키 호출 예시</li>
+      <pre>
+            {
+                let obj = {
+                    1:'one',
+                    one:1,
+                    n: 'n'
+                }
+            
+                console.log(obj.one);//1
+                console.log(obj[1]);//one
+                let n = 1
+                console.log(obj[n]);//one
+                console.log(obj['n']);//'n'
+            }
+        </pre
+      >
+    </ul>
+    <hr />
+    <form class="ex1">
+      <p>1. 알파벳을 입력후 버튼을 누르면, 알파벡 별 글자수가 출력되요</p>
+      <p><input type="text" /></p>
+    </form>
+    <hr />
+    <div class="ex2">
+      <p>2. 버튼을 누르면 명단이 출력</p>
+      <p><button>버튼</button></p>
+      <div class="result"></div>
+    </div>
+    <hr />
+    <div class="ex3">
+      <p>3. 버튼을 누르면 명단이 출력</p>
+      <p><button>버튼</button></p>
+      <div class="result">
+        <table>
+          <thead>
+            <tr>
+              <th>이름</th>
+              <th>성별</th>
+              <th>나이</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <hr />
+    <div class="ex4">
+      <p>4. 제시되는 단어에 해당하는 숫자를 고르세요</p>
+      <div class="questions">
+        <!-- <div>
+          <p>one에 해당하는 숫자를 고르세요</p>
+          <p>
+            <input type="radio" name="radio1" value="o" />1
+            <input type="radio" name="radio1" value="x" />2
+            <input type="radio" name="radio1" value="x" />3
+          </p>
+        </div> -->
+      </div>
+      <p><button>결과보기</button></p>
+      <p class="result">점수</p>
+    </div>
+  </body>
 </html>

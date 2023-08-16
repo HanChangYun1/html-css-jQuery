@@ -115,10 +115,16 @@ document.querySelector(".ex1 button").addEventListener("click", () => {
   //ex11
   document.querySelectorAll(".ex11 button").forEach((btn) => {
     btn.addEventListener("click", (el) => {
-      let arr = Array.from(el.target.parentElement.children);
-      let arr2 = arr.filter((x) => x !== el.target);
-      arr2.forEach((e) => {
-        e.classList.remove("active");
+      // let arr = Array.from(el.target.parentElement.children);
+      // let arr2 = arr.filter((x) => x !== el.target);
+      // arr2.forEach((e) => {
+      //   e.classList.remove("active");
+      // });
+      // el.target.classList.toggle("active");
+      document.querySelectorAll(".ex11 button").forEach((button) => {
+        if (button !== el.target) {
+          button.classList.remove("active");
+        }
       });
       el.target.classList.toggle("active");
     });

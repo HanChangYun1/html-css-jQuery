@@ -9,6 +9,67 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="ex1"></div>
+    <div class="ex1">
+      <p>1. 1~10으로 구성된 배열중에 짝홀수 출력하기</p>
+      <p>
+        <button class="even">짝수</button>
+        <button class="odd">홀수</button>
+      </p>
+      <p class="result"></p>
+    </div>
+    <hr />
+    <div class="ex2">
+      <p>2. 숫자 입력후 정렬</p>
+      <p><input type="text" placeholder="여백없이 쉼표로 구분입력" /></p>
+      <p>
+        <button class="asc">오름차순</button>
+        <button class="desc">내림차순</button>
+      </p>
+      <p class="result"></p>
+    </div>
+    <hr />
+    <div class="ex3">
+      <p>3. 숫자나 글자를 입력한후 정렬</p>
+      <p><input type="text" placeholder="여백없이입력" /></p>
+      <p>
+        <button class="asc">오름차순</button>
+        <button class="desc">내림차순</button>
+      </p>
+      <p class="result"></p>
+    </div>
+    <hr />
+    <form class="ex4">
+      <p>4. 이름과 나이 성별 입력후 명단 추가</p>
+      <p>이름 :<input required type="text" /></p>
+      <p>나이 :<input required type="number" /></p>
+      <p>
+        성별 :
+        <input required value="남" name="ex4" type="radio" />남
+        <input required value="여" name="ex4" type="radio" />여
+      </p>
+      <p>
+        <button class="add">추가</button>
+        <button class="name">이름순정렬</button>
+        <button class="age">나이순정렬</button>
+        <button class="man">남자명단</button>
+        <button class="woman">여자명단</button>
+      </p>
+      <p>이름검색 : <input type="text" class="search" /></p>
+      <ul class="result"></ul>
+    </form>
+    <hr />
+    <form class="ex5">
+      <p>5. todoApp</p>
+      <p><input required type="text" placeholder="일정이름 입력" /></p>
+      <p><input required type="date" /></p>
+      <p><input required type="time" /></p>
+      <p><button class="add">일정추가하기</button></p>
+      <p>
+        <button class="name" type="button">이름정렬</button>
+        <button class="date" type="button">날짜정렬</button>
+      </p>
+      <p><input type="text" class="search" placeholder="일정검색" /></p>
+      <ul class="result"></ul>
+    </form>
   </body>
 </html>

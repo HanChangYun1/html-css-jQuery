@@ -1,0 +1,13 @@
+html.dark body {
+  background: #000;
+}
+html.dark * {
+  color: #FFF;
+}
+
+html.blue body {
+  background: blue;
+}
+html.blue * {
+  color: yellow;
+}/*# sourceMappingURL=style.css.map */
